@@ -3,6 +3,7 @@
 **Purpose of the project**
 Assette is a SaaS provider to the institutional investment management industry. Our software is a
 “unified content factory” to produce all sales and client service content.
+
 This project aims to accelerate and finalize the creation of a functional “model client” simulating a
 large, diversified asset manager such as BlackRock. The outcome will serve as a foundational
 demonstration asset for Assette’s sales, quality assurance (QA), and research and development
@@ -10,28 +11,39 @@ demonstration asset for Assette’s sales, quality assurance (QA), and research 
 processing, generation, and visualization.
 
 **Objectives**
+
 • Populate qualitative, quantitative, and disclosure content using AI and automation.
+
 • Simulate multi-source data ingestion and display within Assette’s no-code platform and
 Snowflake.
 
 • Demonstrate real-world scenarios using synthetic Salesforce contacts and periodic
 updates.
+
 • Promote modular development, minimizing inter-team dependencies while enabling
 collaboration.
 
 **1. Data Format**
 Each team must produce synthetic but functional data across multiple formats and
 endpoints for input to Assette:
+
 o One Excel source
+
 o One CSV source
+
 o One Snowflake data source (structured tables)
+
 o One API-based data source (e.g., public REST endpoint)
+
 o OpenAI-generated content (e.g., qualitative sections)
 
 **2. Automation Requirements**
+
 o All sources must be automatically refreshed or ingestible without manual steps.
+
 o One quantitative data source must simulate daily updates (e.g., prices,
 performance).
+
 o Another must simulate weekly updates (e.g., benchmarks, flows).
 o All remaining sources must be at least monthly.
 o All data refresh logic must be fully automated and documented.
