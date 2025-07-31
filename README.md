@@ -27,6 +27,7 @@ o One CSV source
 o One Snowflake data source (structured tables)
 o One API-based data source (e.g., public REST endpoint)
 o OpenAI-generated content (e.g., qualitative sections)
+
 **2. Automation Requirements**
 o All sources must be automatically refreshed or ingestible without manual steps.
 o One quantitative data source must simulate daily updates (e.g., prices,
@@ -34,12 +35,14 @@ performance).
 o Another must simulate weekly updates (e.g., benchmarks, flows).
 o All remaining sources must be at least monthly.
 o All data refresh logic must be fully automated and documented.
+
 **3. Code Requirements**
 All code must adhere to best practices and include:
 o In-line comments, docstrings, and supporting documentation
 o Meaningful unit and integration tests
 o Basic performance optimization (e.g., indexing, caching)
 o Structured error handling and logging
+
 **4. Fact Sheet Artifacts**
 Each team will produce a one-page fact sheet using Assette. Target Fact Sheets will be
 provided, but in general, each team will be expected to produce:
