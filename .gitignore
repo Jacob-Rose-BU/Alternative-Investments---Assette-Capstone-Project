@@ -1,0 +1,100 @@
+# ENV & Secrets
+.env
+.env.*
+*.env
+*.env.*
+.envrc
+*.key
+*.pem
+*.token
+secrets.yml
+config.yaml
+config.json
+openrouter_config.yaml
+
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.pyd
+*.pyo
+.mypy_cache/
+.pytest_cache/
+*.log
+*.db
+*.sqlite
+*.egg-info/
+.cache/
+pip-wheel-metadata/
+*.manifest
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb-junk
+*.nbconvert.ipynb
+*.nbconvert.html
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+
+# Colab & Google Drive Artifacts
+.gdrive/
+.gcolab/
+.metadata/
+.gdoc
+.gsheet
+
+# Build / Distribution
+build/
+dist/
+develop-eggs/
+eggs/
+sdist/
+lib/
+lib64/
+parts/
+var/
+*.egg
+*.whl
+
+# OS-Specific Junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+Icon?
+$RECYCLE.BIN/
+
+# Coverage & Reports
+.coverage
+htmlcov/
+coverage.xml
+.tox/
+nosetests.xml
+test-output/
+*.prof
+
+# Docker / Containers
+.dockerignore
+Dockerfile
+docker-compose.yml
+*.tar
+*.img
+
+# Miscellaneous
+*.bak
+*.tmp
+*.swp
+*.log
+*.orig
+*~
