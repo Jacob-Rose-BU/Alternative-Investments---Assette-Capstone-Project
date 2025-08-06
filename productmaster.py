@@ -305,7 +305,7 @@ enriched_df = generate_qualitative_paragraphs(df_funds)
 # Save to CSV (for export and Snowflake/other database usage)
 enriched_df.to_csv("productmaster_table_synthetic_data.csv", index=False)
 
-print("✅ Synthetic data generated and saved as 'productmaster_table_synthetic_data.csv'")
+print("Synthetic data generated and saved as 'productmaster_table_synthetic_data.csv'")
 
 """##Potential Snowflake Implementation
 This code is intended not only to demonstrate realistic data generation for academic or testing purposes but also to support end-to-end data pipelines where Snowflake acts as the target data warehouse. With minimal adjustments (e.g., schema renaming, batch control), this data can be used in:
