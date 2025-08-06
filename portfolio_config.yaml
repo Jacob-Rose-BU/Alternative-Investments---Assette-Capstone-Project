@@ -1,0 +1,34 @@
+﻿# File: portfolio_config.yaml
+
+
+portfolio_config:
+  num_rows: 50
+
+
+  investment_styles:
+    - Absolute Return
+    - Growth
+    - Value
+    - ESG Tilted
+    - Market Neutral
+
+
+  portfolio_categories:
+    - Alternatives
+    - Equity
+    - Fixed Income
+    - Multi-Asset
+    - Private Markets
+
+
+  currency_map:
+    USD: US Dollar
+    EUR: Euro
+    GBP: British Pound
+    JPY: Japanese Yen
+    CHF: Swiss Franc
+
+
+  is_bod_perf_options:
+    - Yes
+    - No
