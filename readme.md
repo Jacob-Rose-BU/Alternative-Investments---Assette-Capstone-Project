@@ -42,7 +42,7 @@ PRODUCTMASTER
 └── DISCLOSURE_INFORMATION
 ```
 
-## 🛠️ Code-to-Table Mapping
+## Code-to-Table Mapping
 
 The table below outlines which `.py` file(s) generate each table in our top-down data flow, along with a brief description of each table’s purpose.
 
