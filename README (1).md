@@ -127,6 +127,6 @@ Final ESG scores are stored in SECURITY_MASTER and linked to portfolio holdings 
 ---
 
 ## Authors
-Crystal Leatvanich 
-Jacob Rose
-Kendall Sims
+- Crystal Leatvanich 
+- Jacob Rose
+- Kendall Sims
