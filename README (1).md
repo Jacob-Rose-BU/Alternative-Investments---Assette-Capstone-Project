@@ -111,10 +111,10 @@ Final ESG scores are stored in SECURITY_MASTER and linked to portfolio holdings 
 ## Visualization Examples
 
 ### Code-to-Table Mapping Diagram
-![Code-to-Table Mapping](code_to_table_mapping.png)
+**link
 
-### ESG Scoring Flow
-![ESG Scoring Flow](esg_scoring_flow.png)
+### Initial Logic for Fact Sheet Components
+**link
 
 ---
 
@@ -127,4 +127,6 @@ Final ESG scores are stored in SECURITY_MASTER and linked to portfolio holdings 
 ---
 
 ## Authors
-Alternatives Capstone Project Team – Boston University MSBA 2025
+Crystal Leatvanich 
+Jacob Rose
+Kendall Sims
