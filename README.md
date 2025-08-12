@@ -17,7 +17,7 @@ Our primary goal: create a modular, reproducible process that covers **all major
 ## Data Flow Diagram
 Below is the high-level pipeline diagram showing ingestion sources, processing scripts (grouped by fact sheet area), and output targets:
 
-[Data Flow Diagram](documentation/architecture:data_flow_diagram_esg_pipeline.png)
+[Data Flow Diagram](documentation/architecture/data_flow_diagram_esg_pipeline.pdf)
 
 ---
 
