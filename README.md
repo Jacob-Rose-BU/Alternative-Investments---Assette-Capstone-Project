@@ -111,7 +111,7 @@ Final ESG scores are stored in SECURITY_MASTER and linked to portfolio holdings 
 ## Foundational Visualization Examples
 
 ### Fact Sheet Component to Source Table Excel
-[Fact Sheet Component to Source Table Reference]documentation/architecture/fact_sheet_component_to_source_table_reference.xlsx
+documentation/architecture/fact_sheet_component_to_source_table_reference.xlsx
 
 ### Initial Logic for Fact Sheet Components
 **link
