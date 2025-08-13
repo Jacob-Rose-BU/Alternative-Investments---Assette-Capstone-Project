@@ -8,7 +8,7 @@ This document outlines the structure and relationships of the ESG fund database 
 
 * **Primary key:** `PRODUCTCODE`.
 
-* **Selected columns:** `PRODUCTCODE, PRODUCTNAME, STRATEGY`. esg\_pipeline\_table\_mapp…
+* **Selected columns:** `PRODUCTCODE, PRODUCTNAME, STRATEGY`.
 
 * **Connections:** One‑to‑one with `PORTFOLIOGENERALINFORMATION` via `PRODUCTCODE`. Upstream of all portfolio‑level content.
 
@@ -22,7 +22,7 @@ This document outlines the structure and relationships of the ESG fund database 
 
 * **Foreign keys:** `PORTFOLIOCODE`.
 
-* **Selected columns:** `PRODUCTCODE, PORTFOLIOCODE (FK), PORTFOLIOCATEGORY`. esg\_pipeline\_table\_mapp…
+* **Selected columns:** `PRODUCTCODE, PORTFOLIOCODE (FK), PORTFOLIOCATEGORY`. 
 
 * **Connections:**
 
@@ -40,7 +40,7 @@ This document outlines the structure and relationships of the ESG fund database 
 
 * **Foreign keys:** `BENCHMARKCODE`.
 
-* **Selected columns:** `PORTFOLIOCODE (PK), BENCHMARKCODE (FK), RANK`. esg\_pipeline\_table\_mapp…
+* **Selected columns:** `PORTFOLIOCODE (PK), BENCHMARKCODE (FK), RANK`. 
 
 * **Connections:**
 
@@ -56,7 +56,7 @@ This document outlines the structure and relationships of the ESG fund database 
 
 * **Foreign keys:** `SYMBOL`.
 
-* **Selected columns:** `BENCHMARKCODE (PK), SYMBOL (FK), NAME, ISBEGINOFDAYPERFORMANCE`. esg\_pipeline\_table\_mapp…
+* **Selected columns:** `BENCHMARKCODE (PK), SYMBOL (FK), NAME, ISBEGINOFDAYPERFORMANCE`. 
 
 * **Connections:**
 
@@ -98,7 +98,7 @@ This document outlines the structure and relationships of the ESG fund database 
 
 * **Foreign keys:** `TICKER` (to security).
 
-* **Selected columns:** `PORTFOLIOCODE (PK), TICKER (FK), CURRENCYCODE, CURRENCY, ISSUENAME, QUANTITY, MARKETVALUE, PORTFOLIOWEIGHT, PRICE, ASSETCLASSNAME, ISSUETYPE, ISSUECOUNTRYCODE, ISSUECOUNTRY, HISTORYDATE`. esg\_pipeline\_table\_mapp…
+* **Selected columns:** `PORTFOLIOCODE (PK), TICKER (FK), CURRENCYCODE, CURRENCY, ISSUENAME, QUANTITY, MARKETVALUE, PORTFOLIOWEIGHT, PRICE, ASSETCLASSNAME, ISSUETYPE, ISSUECOUNTRYCODE, ISSUECOUNTRY, HISTORYDATE`. 
 
 * **Connections:**
 
@@ -130,7 +130,7 @@ This document outlines the structure and relationships of the ESG fund database 
 
 * **Primary key (composite):** `TICKER, DATE`.
 
-* **Selected columns:** `TICKER, DATE, OPEN, HIGH, LOW, CLOSE, VOLUME, DIVIDENDS, STOCK_SPLITS, DATA_TYPE, ESGPERFORMANCE, TOTALESG, ENVIRONMENTSCORE, SOCIALSCORE, GOVERNANCESCORE, HIGHESTCONTROVERSY`. esg\_pipeline\_table\_mapp…
+* **Selected columns:** `TICKER, DATE, OPEN, HIGH, LOW, CLOSE, VOLUME, DIVIDENDS, STOCK_SPLITS, DATA_TYPE, ESGPERFORMANCE, TOTALESG, ENVIRONMENTSCORE, SOCIALSCORE, GOVERNANCESCORE, HIGHESTCONTROVERSY`.
 
 * **Connections:**
 
@@ -146,7 +146,7 @@ This document outlines the structure and relationships of the ESG fund database 
 
 * **Primary key:** `PORTFOLIOCODE` (functions as series identifier).
 
-* **Selected columns:** `PORTFOLIOCODE, PORTFOLIOPERFORMANCE, PORTFOLIOFOCUS, AVERAGE_ESG_SCORE, BENCHMARKCODE, ALPHA, HISTORYDATE, CURRENCYCODE, CURRENCY, PERFORMANCECATEGORY, PERFORMANCEFREQUENCY, PERFORMANCETYPE, PERFORMANCEFACTOR`. esg\_pipeline\_table\_mapp…
+* **Selected columns:** `PORTFOLIOCODE, PORTFOLIOPERFORMANCE, PORTFOLIOFOCUS, AVERAGE_ESG_SCORE, BENCHMARKCODE, ALPHA, HISTORYDATE, CURRENCYCODE, CURRENCY, PERFORMANCECATEGORY, PERFORMANCEFREQUENCY, PERFORMANCETYPE, PERFORMANCEFACTOR`. 
 
 * **Connections:**
 
@@ -160,7 +160,7 @@ This document outlines the structure and relationships of the ESG fund database 
 
 * **Why:** People data for “Team” sections (key personnel, titles, experience).
 
-* **Selected columns:** `EMPLOYEEID, NAME, START_DATE, INFUSTRY_EXPERIENCE_YEARS, JOB_FUNCTION, TITLE, TEAM, EDUCATION, EMPLOYMENTTYPE, LOCATION, ISKEYPERSONNEL, STATUS`. esg\_pipeline\_table\_mapp…
+* **Selected columns:** `EMPLOYEEID, NAME, START_DATE, INFUSTRY_EXPERIENCE_YEARS, JOB_FUNCTION, TITLE, TEAM, EDUCATION, EMPLOYMENTTYPE, LOCATION, ISKEYPERSONNEL, STATUS`. 
 
 * **Connections:** Independent; filtered for “Key Personnel,” then rendered in factsheets.
 
@@ -170,7 +170,7 @@ This document outlines the structure and relationships of the ESG fund database 
 
 * **Why:** Central store for mandatory/non‑mandatory disclosures and their governance (effective/review dates, who reviewed).
 
-* **Selected columns:** `DISCLOSUREID, TOPIC, EFFECTIVEDATE, DISCLOSURETYPE, APPLIESTO, LASTREVIEWDATE, REVIEWEDBY, DISCLOSUREREQUIREMENT, DISCLOSURESOURCE`. esg\_pipeline\_table\_mapp…
+* **Selected columns:** `DISCLOSUREID, TOPIC, EFFECTIVEDATE, DISCLOSURETYPE, APPLIESTO, LASTREVIEWDATE, REVIEWEDBY, DISCLOSUREREQUIREMENT, DISCLOSURESOURCE`.
 
 * **Connections:** Independent; filtered by type/context for the factsheet footers.
 
