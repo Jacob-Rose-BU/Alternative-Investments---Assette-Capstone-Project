@@ -2,6 +2,24 @@
 
 This document outlines the structure and relationships of the ESG fund database for Alternatives strategy fact sheets, reflecting the final pipeline implementation. It explains the role of each table and how they connect to support performance reporting, ESG scoring, and benchmark analysis.
 
+
+PRODUCTMASTER (PK: PRODUCTCODE)
+    └─< PORTFOLIOGENERALINFORMATION (PK: PRODUCTCODE, FK: PORTFOLIOCODE)
+            ├─< PORTFOLIOBENCHMARKASSOCIATION (PK: PORTFOLIOCODE, FK: BENCHMARKCODE)
+            │       └─ BENCHMARKGENERALINFORMATION (PK: BENCHMARKCODE)
+            │              └─< BENCHMARKCHARACTERISTICS (PK: BENCHMARKCODE)
+            │              └─< BENCHMARKPERFORMANCE (PK: BENCHMARKCODE)
+            │
+            ├─< HOLDINGSDETAILS (PK: PORTFOLIOCODE, FK: TICKER)
+            │       └─ SECURITY_MASTER (PK: TICKER)
+            │              └─< SECURITY_PERFORMANCE_HISTORY (PK: TICKER, DATE)
+            │
+            └─< PORTFOLIOPERFORMANCE (PK: PORTFOLIOCODE, BENCHMARKCODE)
+            
+HR_INFORMATION  (independent, joins by people/teams when needed)
+DISCLOSURE_INFORMATION (independent; joins by show/filters for factsheets)
+
+
 ### **PRODUCTMASTER**
 
 * **Why it exists / function:** Entry point for products/funds; defines the strategy “container” that downstream tables hang off.
