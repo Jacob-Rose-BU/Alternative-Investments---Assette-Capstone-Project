@@ -2,24 +2,6 @@
 
 This document outlines the structure and relationships of the ESG fund database for Alternatives strategy fact sheets, reflecting the final pipeline implementation. It explains the role of each table and how they connect to support performance reporting, ESG scoring, and benchmark analysis.
 
-## ESG Data Map – Flow Diagram
-
-flowchart TD
-  PRODUCTMASTER --> PORTFOLIOGENERALINFORMATION
-  PORTFOLIOGENERALINFORMATION --> PORTFOLIOBENCHMARKASSOCIATION
-  PORTFOLIOBENCHMARKASSOCIATION --> BENCHMARKGENERALINFORMATION
-  BENCHMARKGENERALINFORMATION --> BENCHMARKCHARACTERISTICS
-  BENCHMARKGENERALINFORMATION --> BENCHMARKPERFORMANCE
-  PORTFOLIOGENERALINFORMATION --> HOLDINGSDETAILS
-  HOLDINGSDETAILS --> SECURITY_MASTER
-  SECURITY_MASTER --> SECURITY_PERFORMANCE_HISTORY
-  PORTFOLIOGENERALINFORMATION --> PORTFOLIOPERFORMANCE
-  PORTFOLIOPERFORMANCE --> BENCHMARKPERFORMANCE
-  HR_INFORMATION -.-> PORTFOLIOGENERALINFORMATION
-  DISCLOSURE_INFORMATION -.-> PORTFOLIOGENERALINFORMATION
-
-
-
 ### **PRODUCTMASTER**
 
 * **Why it exists / function:** Entry point for products/funds; defines the strategy “container” that downstream tables hang off.
